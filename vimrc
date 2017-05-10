@@ -35,8 +35,8 @@ set t_Co=256
 set background=dark
 "let g:solarized_termtrans=1
 "let g:solarized_termcolors=256
-"let g:solarized_visibility = "high"
-"let g:solarized_contrast = "high"
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
 colorscheme solarized
 "colorscheme molokai
 " 高亮显示当前行/列 
@@ -179,7 +179,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'sukima/xmledit'
 Bundle 'sjl/gundo.vim'
 Bundle 'jiangmiao/auto-pairs'
-Bundle 'klen/python-mode'
+"Bundle 'klen/python-mode'
 Bundle 'Valloric/ListToggle'
 Bundle 'SirVer/ultisnips'
 Bundle 'Valloric/YouCompleteMe'
@@ -210,6 +210,7 @@ Bundle 'VimIM'
 "(非上面两种情况的，按下面格式填写)  
 "Bundle 'git://git.wincent.com/command-t.git'     
 Plugin 'jceb/vim-orgmode'
+Plugin 'honza/vim-snippets'
   
 filetype plugin indent on     " required!   /** vimrc文件配置结束 **/  
 "/** vundle命令 **/  

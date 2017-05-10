@@ -100,7 +100,7 @@ else
     if tmux attach-session -t 0; then
         ;
     else
-        tmux 0
+        tmux
     fi
 fi
 }

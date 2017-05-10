@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/opt/userhome/icchchen/ECheng_Analyzer/src/com'
-let g:netrw_dirhist_2='/opt/userhome/icchchen/parser_class/data_total/banks'
-let g:netrw_dirhist_3='/opt/userhome/icliubei/algo_service/tag_predict_badcase/manual_labeled_badcase'

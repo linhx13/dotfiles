@@ -159,6 +159,7 @@ imap aj <esc>
 "================================= 
 filetype off "bundle required
 
+" git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 

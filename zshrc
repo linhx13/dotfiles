@@ -136,3 +136,22 @@ export VIRTUALENVWRAPPER_SCRIPT=${LOCAL_HOME}/bin/virtualenvwrapper.sh
 source ${LOCAL_HOME}/bin/virtualenvwrapper_lazy.sh
 
 export SVN_EDITOR="vim"
+function sa() {
+    if [ $# -ne 1 ]; then
+        return 1
+    else
+        screen -D -R $1
+    fi
+}
+
+alias sd="sa download"
+alias sls="screen -list"
+
+export SSH_AUTH_SOCK=~/.ssh/ssh-agent.$HOSTNAME.sock
+if [ $(uname) = "Linux" ]; then
+    ssh-add -l 2>/dev/null >/dev/null
+    if [ $? -ge 2 ]; then
+        ssh-agent -a "$SSH_AUTH_SOCK" >/dev/null
+        ssh-add ~/.ssh/id_rsa.ifchange.kdd < ~/.ssh/id_rsa.ifchange.kdd.keyphrase
+    fi
+fi

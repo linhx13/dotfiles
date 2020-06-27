@@ -121,10 +121,7 @@ LOCAL_HOME="$HOME/.local"
 export PATH="${LOCAL_HOME}/bin:${PATH}"
 export LD_LIBRARY_PATH="${LOCAL_HOME}/lib:${LD_LIBRARY_PATH}"
 
-export WORKON_HOME=$HOME/.virtualenvs
 #export PROJECT_HOME=$HOME/projects
-export VIRTUALENVWRAPPER_SCRIPT=${LOCAL_HOME}/bin/virtualenvwrapper.sh
-source ${LOCAL_HOME}/bin/virtualenvwrapper_lazy.sh
 
 export SVN_EDITOR="vim"
 function sa() {
@@ -138,11 +135,3 @@ function sa() {
 alias sd="sa download"
 alias sls="screen -list"
 
-export SSH_AUTH_SOCK=~/.ssh/ssh-agent.$HOSTNAME.sock
-if [ $(uname) = "Linux" ]; then
-    ssh-add -l 2>/dev/null >/dev/null
-    if [ $? -ge 2 ]; then
-        ssh-agent -a "$SSH_AUTH_SOCK" >/dev/null
-        ssh-add ~/.ssh/id_rsa.ifchange.kdd < ~/.ssh/id_rsa.ifchange.kdd.keyphrase
-    fi
-fi

@@ -117,16 +117,7 @@ if [ -n "$INSIDE_EMACS" ]; then
     print -P "\033AnSiTc %d"
 fi
 
-export PATH="/opt/userhome/ichongxiang/local/emacs-24.5/bin:$PATH"
-#export PATH="/opt/userhome/ichongxiang/local/word2vec:$PATH"
-#export PATH="/opt/userhome/ichongxiang/local/fastText:$PATH"
-
-#export PATH="/opt/userhome/ichongxiang/local/opencc/bin:$PATH"
-#export LD_LIBRARY_PATH="/opt/userhome/ichongxiang/local/opencc/lib:${LD_LIBRARY_PATH}"
-
-export PATH="/opt/app/Python2.7/bin:${PATH}"
-
-LOCAL_HOME="/opt/userhome/ichongxiang/.local"
+LOCAL_HOME="$HOME/.local"
 export PATH="${LOCAL_HOME}/bin:${PATH}"
 export LD_LIBRARY_PATH="${LOCAL_HOME}/lib:${LD_LIBRARY_PATH}"
 

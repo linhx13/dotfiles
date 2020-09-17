@@ -91,13 +91,13 @@ alias vi="vim"
 
 function ta() {
 if [ $# -eq 1 ]; then
-    if tmux attach-session -t $1; then
+    if tmux attach-session -d -t $1; then
         ;
     else
         tmux new -s $1
     fi
 else
-    if tmux attach-session -t 0; then
+    if tmux attach-session -d -t 0; then
         ;
     else
         tmux

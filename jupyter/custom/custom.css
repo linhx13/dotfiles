@@ -1,0 +1,16 @@
+/*This file contains any manual css for this page that needs to override the global styles.
+This is only required when different pages style the same element differently. This is just
+a hack to deal with our current css styles and no new styling should be added in this file.*/
+
+#ipython-main-app {
+    position: relative;
+}
+#jupyter-main-app {
+    position: relative;
+}
+
+.introspection, .input_prompt,.output_prompt, .output pre, .CodeMirror pre {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, "Microsoft Yahei";
+    font-size: 15px;
+    line-height: 22px;
+}
